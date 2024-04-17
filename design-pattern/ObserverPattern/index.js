@@ -8,10 +8,7 @@ class Subject {
         this.observers.push(ob)
     }
     rmOb(ob) {
-        const index = this.observers.indexOf(ob)
-        if (index >= 0) {
-            this.observers.splice(index, 1)
-        }
+        this.observers = this.observers.filter(o => o !== ob)
     }
     notify(msg) {
         this.observers.forEach(ob => {
