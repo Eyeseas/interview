@@ -1,0 +1,23 @@
+{
+    "name": "interview",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Eyeseas/interview.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Eyeseas/interview/issues"
+    },
+    "homepage": "https://github.com/Eyeseas/interview#readme",
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}
