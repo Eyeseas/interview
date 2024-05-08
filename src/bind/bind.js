@@ -12,7 +12,7 @@ export function bind1(context, ...args) {
         ]);
     };
 
-    // fn.prototype = Object.create(this.prototype);
+    fn.prototype = Object.create(this.prototype);
 
     return fn;
 }
