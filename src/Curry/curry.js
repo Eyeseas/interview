@@ -1,4 +1,4 @@
-function curry(fn) {
+export function curry(fn) {
     return function curried(...args) {
         // 检查当前收集到的参数数量是否足够原函数执行
         if (args.length >= fn.length) {
@@ -13,16 +13,3 @@ function curry(fn) {
         }
     };
 }
-
-// 示例：使用curry函数柯里化一个三参数的加法函数
-function add(a, b, c) {
-    return a + b + c;
-}
-
-let curriedAdd = curry(add);
-
-console.log(curriedAdd(1, 2, 3)); // 输出 6
-console.log(curriedAdd(1)(2)(3)); // 输出 6
-console.log(curriedAdd(1, 2)(3)); // 输出 6
-console.log(curriedAdd(1)(2, 3)); // 输出 6
-console.log(curriedAdd(1, 2, 3, 4)); // 输出 6，忽略多余的参数
